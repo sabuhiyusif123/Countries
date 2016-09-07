@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context="project.sabuhi.com.countries.OlkeActivity"
+                >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/olke_adi"
+        android:paddingLeft="170dp"
+        android:text="@string/olke_adi"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_alignBaseline="@+id/olke"
+        android:layout_alignBottom="@+id/olke"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        style="?android:listSeparatorTextViewStyle"/>
+
+    <TextView
+        android:text="@string/paytaxt_adi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/paytaxt"
+        android:layout_alignRight="@+id/olke_adi"
+        android:layout_alignEnd="@+id/olke_adi"
+        android:id="@+id/paytaxtAdi" />
+
+    <TextView
+        android:text="@string/paytaxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="101dp"
+        android:id="@+id/paytaxt"
+
+        android:layout_alignLeft="@+id/olke"
+        android:layout_alignStart="@+id/olke"/>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+        android:elevation="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/olke"
+        android:id="@+id/olke"
+        android:paddingRight="40dp"
+        style="?android:listSeparatorTextViewStyle"
+
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    />
+</RelativeLayout>
+
